@@ -7,6 +7,8 @@ computador random
 
 '''
 import random
+
+from time import sleep
 itens = ('PEDRA', 'TESOURA','PAPEL')
 computador = random.randint(0,2)
 
@@ -17,8 +19,13 @@ print ('----- Vamos jogar JOKENPÔ!!! -------')
 
 print (' Veja as opões: \n [0] PEDRA \n [1] TESOURA \n [2] PAPEL')
 print ('-=-'*15)
-jogue = int (input('ESCOLHA\n \n JO\nKEN\nPÔ\n\n'))
-
+jogue = int (input('ESCOLHA  \n\n  '))
+print ('JO')
+sleep (1)
+print ('KEN')
+sleep(1)
+print ('PÔ')
+sleep(2)
 
 print ('-=-'*15)
 
