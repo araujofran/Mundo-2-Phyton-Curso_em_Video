@@ -13,9 +13,9 @@ if a<(b+c) and b<(c+a) and c<(a+b):
     print ('É um triângulo ! Os seu valores são {:.0f} , {:.0f} , {:.0f}'. format (a,b,c))
     if a==b and a==c and b==c:
         print ('Ele é um triângulo Equilátero')
-    elif a==b and a!=c and c!=b:
+    elif a==b and a!=c and c!=b or a!=b and a==c and b!=c:
         print ('Ele é um triângulo Isóceles')
-    elif a!=b and a!=c and b!=c:
+    elif a!=b and a!=c and b!=c :
         print ('Ele é um triângulo Escaleno')
 
 else:
