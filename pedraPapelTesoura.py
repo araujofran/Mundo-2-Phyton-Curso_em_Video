@@ -7,6 +7,7 @@ computador random
 
 '''
 import random
+itens = ('PEDRA', 'TESOURA','PAPEL')
 computador = random.randint(0,2)
 
 
@@ -21,8 +22,8 @@ jogue = int (input('ESCOLHA\n \n JO\nKEN\nPÔ\n\n'))
 
 print ('-=-'*15)
 
-print (' O computador jogou: {}.'.format(computador))
-print (' Você jogou: {}.'.format(jogue))
+print (' O computador jogou: {}.'.format(itens[computador]))
+print (' Você jogou: {}.'.format(itens[jogue]))
 
  
 '''
