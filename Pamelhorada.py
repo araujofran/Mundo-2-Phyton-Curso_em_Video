@@ -8,20 +8,21 @@ while c<10:
     c+=1
     print(' {}'.format(pa), end=' ')
     print ( ' ->' if c<10 else ']', end=' ')
-    
+print ('-> PAUSA')  
 print ('\n')
 pergunta= str (input ('Você quer mais termos? [S/N] ')).strip().upper()
 
-while pergunta =='S'and pergunta!= 0:
-   
+while pergunta =='S':  
     extra= int (input ('Quantos termos extras a mais você quer? '))
     cont=0
-    total=c+extra
+    total=0
     while cont<extra:
         pa +=raz
         cont +=1
         print(' {}'.format(pa), end=' ')
-        print ( ' ->' if c<=extra else ']',end =' ')
+        print ( ' ->' if c<extra else '->',end =' ')
+        total=c+extra
     pergunta= str (input ('Você quer mais termos? [S/N] ')).strip().upper()
-    print ('O numero total de termos gerados foi {} '. format(total))
+
+print ('O numero total de termos gerados foi {} '. format(total))
 print (' FIM ')
