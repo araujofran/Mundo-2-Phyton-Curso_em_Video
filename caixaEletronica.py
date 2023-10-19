@@ -17,6 +17,8 @@ while resto3 !=0:
      resto1= resto % 20 # ok
      quantidadecedulas= int(resto/20)
 
+     
+
      print('Há {} cedula(s) de RS20,00. '.format (quantidadecedulas))
 
      resto2= resto1 % 10 # ok
