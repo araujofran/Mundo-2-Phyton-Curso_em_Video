@@ -1,25 +1,25 @@
-while True:
+num = int (input ('Qual o valor será sacado? R$ '))
 
-    num = int (input ('Qual o valor será sacado? R$ '))
-    num50 = int (num/50)
-    resto1= num%50
+resto= num % 50 
+quantidadecedulas= int (num/50) 
 
+resto3 =1
+
+while resto3 !=0:
     
-    while resto !=0:
-        print ('Total de {} cedulas de R$50 '.format(num50))
-        
-        if resto!=0:
-            resto =resto%20
-            num20= int (resto/20)
-            print ('Total de {} cedulas de R$20 '.format(num20))
-        if resto!=0:
-            resto =num20%10
-            num10= int (num20/20)
-            print ('Total de {} cedulas de R$10 '.format(num10))
-        if resto!=0:
-            resto =num10%10
-            num01= int (num10/20)
-            print ('Total de {} cedulas de R$1 '.format(num01))
-        else:
-            break
-    print ('Volte sempre!')
+     print('O resto da conta  divido por R$50 é {} e a quantidade de cedulas é {} '.format (resto,quantidadecedulas))
+     resto1= resto % 20 # ok
+     quantidadecedulas= int(resto/20)
+
+     print('O resto da conta  divido por R$20 é {} e a quantidade de cedulas é {} '.format (resto1,quantidadecedulas))
+
+     resto2= resto1 % 10 # ok
+     quantidadecedulas= int(resto1/10)  # OK
+
+     print('O resto da conta  divido por R$10 é {} e a quantidade de cedulas é {} '.format (resto2,quantidadecedulas))
+    
+     resto3= resto2 % 1 # ok
+     quantidadecedulas= int(resto2/1)
+     print('O resto da conta  divido por R$1 é {} e a quantidade de cedulas é {} '.format (resto3,quantidadecedulas))
+
+     print('Volte sempre!')
