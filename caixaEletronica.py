@@ -1,3 +1,7 @@
+print (25* '==')
+print ('==============  BANCO GUANABARA  =================')
+print (25* '==')
+
 num = int (input ('Qual o valor será sacado? R$ '))
 
 resto= num % 50 
@@ -6,20 +10,24 @@ quantidadecedulas= int (num/50)
 resto3 =1
 
 while resto3 !=0:
+
+     print (25* '==')
     
-     print('O resto da conta  divido por R$50 é {} e a quantidade de cedulas é {} '.format (resto,quantidadecedulas))
+     print('Há {} cedula(s) de RS50,00. '.format (quantidadecedulas))
      resto1= resto % 20 # ok
      quantidadecedulas= int(resto/20)
 
-     print('O resto da conta  divido por R$20 é {} e a quantidade de cedulas é {} '.format (resto1,quantidadecedulas))
+     print('Há {} cedula(s) de RS20,00. '.format (quantidadecedulas))
 
      resto2= resto1 % 10 # ok
      quantidadecedulas= int(resto1/10)  # OK
 
-     print('O resto da conta  divido por R$10 é {} e a quantidade de cedulas é {} '.format (resto2,quantidadecedulas))
+     print('Há {} cedula(s) de RS10,00. '.format (quantidadecedulas))
     
      resto3= resto2 % 1 # ok
      quantidadecedulas= int(resto2/1)
-     print('O resto da conta  divido por R$1 é {} e a quantidade de cedulas é {} '.format (resto3,quantidadecedulas))
+     print('Há {} cedula(s) de RS1,00. '.format (quantidadecedulas))
+
+     print (25* '==')
 
      print('Volte sempre!')
